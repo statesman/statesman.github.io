@@ -8,7 +8,7 @@ permalink: /about/
 ### {{ human.name }}
 {{ human.title }}
 
-{% include icon-twitter.html username=human.twitter %}
+~ {% include icon-twitter.html username=human.twitter %}
 
 {% include icon-github.html username=human.github %}
 
