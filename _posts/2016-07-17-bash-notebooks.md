@@ -2,7 +2,8 @@
 layout: post
 title:  "Csvkit data pipelines with Bash in Jupyter Notebooks"
 date:   2016-07-17 17:00:00 -0500
-categories: jekyll update
+categories: data analysis
+tags: notebooks
 ---
 
 By Christian McDonald
@@ -15,12 +16,12 @@ But I was bummed when I first tried to use csvkit-based data pipeline in a noteb
 
 With a few quick commands, you can add a Bash option to your Jupyter Notebook. Once you are in your virtual environment, do:
 
-``` python
+``` bash
 $ pip install bash_kernel
 $ python -m bash_kernel.install
 ```
 Now when you start you Notebook, you should have a Bash option.
 
-![start-notebook](notebook-start.png)
+![start-notebook]({{ site.url }}/assets/img/notebook-start.png)
 
 I'm using this for the first time this fall with my UT Journalism students [to learn csvkit](https://github.com/utdata/cli-tools/blob/master/lectures/UsingNotebooks.md).
