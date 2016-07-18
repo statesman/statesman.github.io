@@ -2,7 +2,7 @@ title: Your awesome title
 email: interactives@statesman.com
 description:
   The Austin American-Statesman's nerrrrrrrrd blog.
-baseurl: "" 
+baseurl: "/blog"
 url: "http://statesman.github.io"
 twitter_username: aasinteractive
 github_username:  statesman
