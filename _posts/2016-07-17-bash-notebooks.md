@@ -24,4 +24,4 @@ Now when you start you Notebook, you should have a Bash option.
 
 ![start-notebook]({{ site.url }}/assets/img/notebook-start.png)
 
-I've yet to use Notebooks on a published story yet,, but I am for the first time using them [to learn csvkit](https://github.com/utdata/cli-tools/blob/master/lectures/UsingNotebooks.md) to my UT Journalism students.
+I've yet to use Notebooks on a published story yet,, but I am for the first time using them [to teach csvkit](https://github.com/utdata/cli-tools/blob/master/lectures/UsingNotebooks.md) to my UT Journalism students.
