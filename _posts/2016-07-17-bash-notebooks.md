@@ -25,3 +25,18 @@ Now when you start you Notebook, you should have a Bash option.
 ![start-notebook]({{ site.url }}/assets/img/notebook-start.png)
 
 I've yet to use Notebooks on a published story yet,, but I am for the first time using them [to teach csvkit](https://github.com/utdata/cli-tools/blob/master/lectures/UsingNotebooks.md) to my UT Journalism students.
+
+## Run bash in a Python notebook
+
+When I was working through the [agate](http://agate.readthedocs.io/en/1.4.0/tutorial.html) tutorial, I was frustrated that I could not see the data I was working with. It could be that I just don't know how to do the equivalent of `head` in agate, but I did find another way.
+
+To run **Bash** in a single cell, start it with `%%bash`.
+
+```
+%%bash
+head exonerations-20150828.csv
+```
+
+When I did the agate tutorial, I didn't want to do it in the Python interpreter, I wanted to run it in a notebook so I could take notes and reproduce it. So even though it was a Python notebook, I started it with a `%% bash` command to `curl` the data into my directory. I then ran `head` on it so I could see the first couple of rows, since I wasn't familiar with the data.
+
+I'm sure there is a better way to do this in agate, but I'm sure there are other instances where running `%%bash` will come in handy.
