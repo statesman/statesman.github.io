@@ -28,6 +28,13 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
 
 
 // Use media queries like this:
@@ -51,3 +58,8 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+// byline style for posts
+.byline {
+    @extend .italic;
+}

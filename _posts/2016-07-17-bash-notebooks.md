@@ -2,11 +2,12 @@
 layout: post
 title:  "Csvkit data pipelines with Bash in Jupyter Notebooks"
 date:   2016-07-17 17:00:00 -0500
-categories: data analysis
+categories: data-analysis
 tags: notebooks
+byline: "Christian McDonald"
 ---
 
-By Christian McDonald
+{% include byline.html %}
 
 I've been enamored with **[Jupyter Notebooks](http://jupyter.org/)** since I learned about them at the [NICAR conference](http://www.ire.org/conferences/nicar2016/) this year. The idea of transparent, repeatable data analysis for journalism is important to me, and Notebook makes this possible.
 
