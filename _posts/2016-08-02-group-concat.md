@@ -12,6 +12,7 @@ I came across this SQL command that came in quite useful. It's not that advanced
 
 Say you have a data set like this in `test.data`:
 
+```
 | User_ID | Name         |
 |--------:|--------------|
 |     001 | Bob S.       |
@@ -19,6 +20,7 @@ Say you have a data set like this in `test.data`:
 |     001 | Robert Smith |
 |     002 | Joe Adams    |
 |     002 | J. Adams     |
+```
 
 You want to know how many records each person has, but their names are not consistent. You don't want to just get a count of the `User_ID`, because you won't know who they are, and you want to capture all the different ways the name is spelled.
 
@@ -32,11 +34,12 @@ GROUP BY User_ID
 
 You get a result like this:
 
+```
 | User_ID | Names                           | Records |
 |--------:|---------------------------------|---------|
 |     001 | Bob S.,Bobby Smith,Robert Smith | 3       |
 |     002 | Joe Adams,J. Adams              | 2       |
-
+```
 
 
 
