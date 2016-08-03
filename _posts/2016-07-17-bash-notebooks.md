@@ -4,7 +4,9 @@ title:  "Csvkit data pipelines with Bash in Jupyter Notebooks"
 date:   2016-07-17 17:00:00 -0500
 categories: data-analysis
 tags: notebooks
-byline: "Christian McDonald"
+byline:
+    name: "Christian McDonald"
+    twitter: "crit"
 ---
 
 {% include byline.html %}

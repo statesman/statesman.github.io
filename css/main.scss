@@ -63,3 +63,8 @@ $on-laptop:        800px;
 .byline {
     @extend .italic;
 }
+
+.footnote {
+    color: $grey-color;
+    font-size: 12px;
+}
