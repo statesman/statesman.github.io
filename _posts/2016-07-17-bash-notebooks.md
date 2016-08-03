@@ -20,6 +20,9 @@ With a few quick commands, you can add a Bash option to your Jupyter Notebook. O
 $ pip install bash_kernel
 $ python -m bash_kernel.install
 ```
+
+(Of note: I've found this doesn't work well on PC's at all. The Bash Kernel keeps crashing. That said, you still can run Bash in a cell in the Python kernal as noted below.)
+
 Now when you start you Notebook, you should have a Bash option.
 
 ![start-notebook]({{ site.url }}/assets/img/notebook-start.png)
