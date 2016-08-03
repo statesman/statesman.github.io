@@ -22,12 +22,13 @@ Say you have a data set like this in `test.data`:
 |     002 | J. Adams     |
 ```
 
-You want to know how many records each person has, but their names are not consistent. You don't want to just get a count of the `User_ID`, because you won't know who they are, and you want to capture all the different ways the name is spelled.
+You want to know how many records each person has, but their names are not consistent. You don't want to just get a count of the `User_ID`, because you won't know who they are, and you want to capture all the different ways the name is spelled, but you don't want a different record for each different name.
 
 ``` sql
 SELECT
   User_ID,
-  GROUP_CONCAT(Name) as Names
+    GROUP_CONCAT(Name) as Names,
+    count(*) as Records
 FROM test.data
 GROUP BY User_ID
 ```
@@ -40,6 +41,12 @@ You get a result like this:
 |     001 | Bob S.,Bobby Smith,Robert Smith | 3       |
 |     002 | Joe Adams,J. Adams              | 2       |
 ```
+
+That was syntax from MySQL using MySQL Workbench. I've also used this with Google BigQuery, but I could also set the separator in a nicer way:
+
+`GROUP_CONCAT(unique(Name), '; ') as Names`
+
+That gave me a nice, semi-colon separated list of `Names`.
 
 
 
