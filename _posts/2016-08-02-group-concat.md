@@ -42,7 +42,7 @@ You get a result like this:
 |     002 | Joe Adams,J. Adams              | 2       |
 ```
 
-That was syntax from MySQL using MySQL Workbench. I've also used this with Google BigQuery, but I could also set the separator in a nicer way:
+That was syntax from MySQL using MySQL Workbench. I've also used this with [Google BigQuery](https://cloud.google.com/bigquery/), but I could also set the separator in a nicer way:
 
 `GROUP_CONCAT(unique(Name), '; ') as Names`
 
