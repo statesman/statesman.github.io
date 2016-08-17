@@ -59,11 +59,6 @@ $on-laptop:        800px;
         "syntax-highlighting"
 ;
 
-// byline style for posts
-.byline {
-    @extend .italic;
-}
-
 .footnote {
     color: $grey-color;
     font-size: 12px;

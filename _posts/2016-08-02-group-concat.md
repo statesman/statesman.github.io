@@ -9,8 +9,6 @@ byline:
     twitter: "crit"
 ---
 
-{% include byline.html %}
-
 I came across this SQL command that came in quite useful. It's not that advanced of a query and I probably should've learned it long ago, but it's been a game changer in a recent project.
 
 Say you have a data set like this in `test.data`:
