@@ -51,12 +51,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-### grunt ###
-.tmp/
-
-# Grunt modules
-node_modules
-.ftppass
-.grunt/
-.slack
