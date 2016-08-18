@@ -6,6 +6,7 @@ baseurl: ""
 url: "http://statesman.github.io"
 twitter_username: aasinteractive
 github_username:  statesman
+email: interactives@statesman.com
 
 markdown: kramdown
 
