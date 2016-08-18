@@ -21,4 +21,4 @@ There’s no one in the newsroom more helpful than the three people sitting arou
 
 Don’t get me wrong. It’s important to use your googling skills to find answers. That’s half of what being a programmer is all about. Plus you don’t want to inundate your coworkers with simple questions that the internet has already answered. But there is a time and place for both. Sometimes it’s better to spend a minute getting a live answer than an hour fruitlessly searching Stack Overflow.
 
-At the end of the day, whether you’re working on data-driven stories of Django based news apps, you’re in a fantastic place. You’ll get to work with wildly talented people, and hang out with them outside of work too if you’re lucky. Who knows, maybe you’ll get to come back after the internship is over.
+At the end of the day, whether you’re working on data-driven stories or Django-based news apps, you’re in a fantastic place. You’ll get to work with wildly talented people, and hang out with them outside of work too if you’re lucky. Who knows, maybe you’ll get to come back after the internship is over.
