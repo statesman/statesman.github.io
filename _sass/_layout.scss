@@ -177,6 +177,21 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: $on-laptop) and (max-width: 992px) {
+        width: 750px;
+    }
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+        width: 970px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1170px;
+    }
+    @include media-query($on-xs) {
+        width: 100%;
+    }
 }
 
 .page-heading {
