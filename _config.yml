@@ -6,8 +6,12 @@ baseurl: ""
 url: "http://statesman.github.io"
 twitter_username: aasinteractive
 github_username:  statesman
+email: interactives@statesman.com
 
 markdown: kramdown
 
-# aliasing 'at data dir so it gets built out
+# alias data directory so it gets built out
 data_dir: data
+
+# don't build these files/dirs out
+exclude: [README.md, package.json, gruntfile.js, node_modules]

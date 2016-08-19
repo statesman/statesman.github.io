@@ -2,7 +2,6 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
@@ -17,16 +16,23 @@
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
-
-    &,
-    &:visited {
-        color: $grey-color-dark;
+    img {
+        height: 25px;
+        &.logo-short {
+            @media screen and (min-width: $on-palm) {
+                display: none;
+            }
+        }
+        &.logo-wide {
+            @media screen and (max-width: $on-palm) {
+                display: none;
+            }
+        }
     }
 }
 
 .site-nav {
     float: right;
-    line-height: 56px;
 
     .menu-icon {
         display: none;
@@ -110,7 +116,16 @@
 .contact-list,
 .social-media-list {
     list-style: none;
-    margin-left: 0;
+    li {
+        float: left;
+        margin-left: 5px;
+    }
+    @include media-query($on-palm) {
+        li {
+            float: none;
+            margin-left: 0;
+        }
+    }
 }
 
 .footer-col-wrapper {
@@ -169,6 +184,21 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: $on-laptop) and (max-width: 992px) {
+        width: 750px;
+    }
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+        width: 970px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1170px;
+    }
+    @include media-query($on-xs) {
+        width: 100%;
+    }
 }
 
 .page-heading {
@@ -205,11 +235,13 @@
 
 .post-title {
     font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
+    line-height: 1.2;
 
     @include media-query($on-laptop) {
         font-size: 36px;
+    }
+    @include media-query($on-xs) {
+        font-size: 24px;
     }
 }
 

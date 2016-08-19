@@ -9,8 +9,6 @@ byline:
     twitter: "crit"
 ---
 
-{% include byline.html %}
-
 I've been enamored with **[Jupyter Notebooks](http://jupyter.org/)** since I learned about them at the [NICAR conference](http://www.ire.org/conferences/nicar2016/) this year. The idea of transparent, repeatable data analysis for journalism is important to me, and Notebook makes this possible.
 
 Learning about them has also turned me into a fan of **conda** virtual environments, and the [Anaconda](https://www.continuum.io/downloads) and [Miniconda](http://conda.pydata.org/miniconda.html) package solutions.

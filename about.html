@@ -1,0 +1,23 @@
+---
+layout: page
+title: About
+permalink: /about/
+---
+
+{% for human in site.data.peeps %}
+<div class="about-wrapper">
+    <h3>{{ human.name }}</h3>
+    <h5>{{ human.title }}</h5>
+    <p>{{ human.description|safe }}</p>
+    <div class="about-social twitter">
+        <a href="https://twitter.com/{{ human.twitter }}" target="_blank">
+            <i class="fa fa-twitter"></i> {{ human.twitter }}
+        </a>
+    </div>
+    <div class="about-social github">
+        <a href="https://github.com/{{ human.github }}" target="_blank">
+            <i class="fa fa-github"></i> {{ human.github }}
+        </a>
+    </div>
+</div>
+{% endfor %}

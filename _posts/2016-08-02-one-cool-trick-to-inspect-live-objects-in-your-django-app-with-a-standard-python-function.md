@@ -8,9 +8,7 @@ byline:
     twitter: "cody_winchester"
 ---
 
-{% include byline.html %}
-
-Scenario: I'm writing unit tests for an API via the [Django Rest Framework](http://www.django-rest-framework.org/). (Which, wooooo tests.)
+Scenario: I'm writing unit tests for an API. (Which, wooooo tests.)
 
 For ~reasons~, one of the test functions needs to loop over a list of the app's model classes -- but only the ones that get imported into `views.py` for inclusion in a [viewset](http://www.django-rest-framework.org/api-guide/viewsets/).
 
