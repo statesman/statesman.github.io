@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "GROUP_CONCAT in SQL"
+title:  "Using GROUP_CONCAT in SQL to see multiple field values"
 date:   2016-08-02 21:12:00 -0500
 categories: data analysis
 tags: sql, mysql
