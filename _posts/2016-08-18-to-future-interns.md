@@ -9,7 +9,7 @@ byline:
 
 {% include byline.html %}
 
-I’ve spent the summer coding about <a href="http://data.statesman.com/austin360/booze-guide/" target="_blank">boozeries</a>, <a href="http://data.statesman.com/candidate-explorer/" target="_blank">city council candidates</a>, <a href="http://projects.statesman.com/news/080716-wind-tax/" target="_blank">renewable energy contracts</a>, and more. I’ve learned a lot, and I want to pass some of those lessons on to the interns of the future.
+I’ve spent the summer coding about boozeries, city council candidates, renewable energy contracts, and more. I’ve learned a lot, and I want to pass some of those lessons on to the interns of the future.
 
 Hello future intern,
 
