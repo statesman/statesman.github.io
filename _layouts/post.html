@@ -20,6 +20,17 @@ layout: default
 
   <div class="post-content" itemprop="articleBody">
     {{ content }}
+
+{% if page.previous.url or page.next.url %}
+<div class="next-prev-links">
+    {% if page.previous.url %}
+    <p>Previous: <a href="{{page.previous.url}}">{{page.previous.title}}</a>
+    {% endif %}
+    {% if page.next.url %}
+    <p>Next: <a href="{{page.next.url}}">{{page.next.title}}</a></p>
+    {% endif %}
+</div>
+{% endif %}
   </div>
 
 </article>
