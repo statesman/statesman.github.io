@@ -5,10 +5,9 @@ permalink: /about/
 ---
 
 {% for human in site.data.peeps %}
-    {% unless human.alumni %}
     <div class="about-wrapper">
         <h3>{{ human.name }}</h3>
-        <p class="sub">{{ human.title }}</p>
+        <p class="sub">{{ human.title }}{% if human.alumni %} (former){% endif %}</p>
         {% if human.description %}<p>{{ human.description|safe }}</p>{% endif %}
         <p>
             <i class="fa fa-twitter"></i> <a href="https://twitter.com/{{ human.twitter }}" target="_blank">{{ human.twitter }}</a>
@@ -16,5 +15,4 @@ permalink: /about/
             <i class="fa fa-github"></i> <a href="https://github.com/{{ human.github }}" target="_blank">{{ human.github }}</a>
         </p>
     </div>
-    {% endunless %}
 {% endfor %}

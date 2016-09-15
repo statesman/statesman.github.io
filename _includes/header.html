@@ -20,7 +20,7 @@
         <ul class="social-media-list">
           {% if site.twitter_username %}
           <li>
-            <a class="page-link" href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter"></i></a>
+            <a class="page-link" href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
           </li>
           {% endif %}
           {% if site.email %}
@@ -30,7 +30,7 @@
           {% endif %}
           {% if site.github_username %}
           <li>
-            <a class="page-link" href="https://github.com/{{ site.github_username }}"><i class="fa fa-github"></i></a>
+            <a class="page-link" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener"><i class="fa fa-github"></i></a>
           </li>
           {% endif %}
           {% for my_page in site.pages %}

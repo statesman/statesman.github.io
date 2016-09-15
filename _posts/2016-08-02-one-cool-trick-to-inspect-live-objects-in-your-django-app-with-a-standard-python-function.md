@@ -6,7 +6,6 @@ tags: python django
 byline:
     - name: "Cody Winchester"
       twitter: "cody_winchester"
-
 ---
 
 Scenario: I'm writing unit tests for an API. (Which, wooooo tests.)
