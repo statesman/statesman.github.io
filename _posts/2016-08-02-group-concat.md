@@ -5,8 +5,8 @@ date:   2016-08-02 21:12:00 -0500
 categories: data analysis
 tags: sql, mysql
 byline:
-    name: "Christian McDonald"
-    twitter: "crit"
+    - name: "Christian McDonald"
+      twitter: "crit"
 ---
 
 I came across this SQL command that came in quite useful. It's not that advanced of a query and I probably should've learned it long ago, but it's been a game changer in a recent project.
