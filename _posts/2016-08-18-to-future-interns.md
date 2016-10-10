@@ -3,8 +3,8 @@ layout: post
 title: "Lessons learned as an online intern"
 date: 2016-08-18 09:21:00 -0500
 byline:
-    name: "Adam Humphrey"
-    twitter: "humphrinator"
+    - name: "Adam Humphrey"
+      twitter: "humphrinator"
 ---
 
 I’ve spent the summer coding about boozeries, city council candidates, renewable energy contracts, and more. I’ve learned a lot, and I want to pass some of those lessons on to the interns of the future.
