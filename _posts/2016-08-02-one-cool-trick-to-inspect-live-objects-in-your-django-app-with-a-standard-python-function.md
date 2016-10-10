@@ -4,8 +4,8 @@ title: "One cool trick to inspect live objects in your Django app with a standar
 date: 2016-08-02 23:12:00 -0500
 tags: python django
 byline:
-    name: "Cody Winchester"
-    twitter: "cody_winchester"
+    - name: "Cody Winchester"
+      twitter: "cody_winchester"
 ---
 
 Scenario: I'm writing unit tests for an API. (Which, wooooo tests.)

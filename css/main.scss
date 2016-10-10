@@ -21,6 +21,7 @@ $brand-color:      #395271;
 
 $grey-color:       #555555;
 $grey-color-light: #bfbfbf;
+$grey-color-lighter: #eee;
 $grey-color-dark:  #333333;
 
 // Width of the content area
@@ -58,11 +59,7 @@ $on-xs:            480px;
 @import
         "base",
         "layout",
+        "about",
         "syntax-highlighting",
         "_font-awesome/font-awesome"
 ;
-
-.footnote {
-    color: $grey-color;
-    font-size: 12px;
-}

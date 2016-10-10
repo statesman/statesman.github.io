@@ -1,0 +1,11 @@
+div.about-wrapper {
+    padding-left: 20px;
+    border-left: 5px solid $grey-color-lighter;
+    margin-bottom: 40px;
+    > h3 {
+        margin: 0;
+    }
+    > p.sub {
+        color: $grey-color;
+    }
+}
