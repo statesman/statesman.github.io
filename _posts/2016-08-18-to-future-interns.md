@@ -7,7 +7,7 @@ byline:
       twitter: "humphrinator"
 ---
 
-I’ve spent the summer coding about boozeries, city council candidates, renewable energy contracts, and more. I’ve learned a lot, and I want to pass some of those lessons on to the interns of the future.
+I’ve spent the summer coding about boozeries, [city council candidates](http://apps.statesman.com/council-candidate-explorer/election/2016/), [renewable energy contracts](http://projects.statesman.com/news/080716-wind-tax/) and more. I’ve learned a lot, and I want to pass some of those lessons on to the interns of the future.
 
 Hello future intern,
 
