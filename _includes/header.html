@@ -3,8 +3,8 @@
   <div class="wrapper">
 
     <a class="site-title" href="{{ site.baseurl }}/">
-      <img src="{{ site.baseurl }}/assets/logo-short-black.png" class="logo-short">
-      <img src="{{ site.baseurl }}/assets/logo-wide-black.png" class="logo-wide">
+      <img src="{{ site.baseurl }}/assets/logo-short-black.png" class="logo-short" alt="Statesman nerd logo">
+      <img src="{{ site.baseurl }}/assets/logo-wide-black.png" class="logo-wide" alt="Statesman nerd logo">
     </a>
 
     <nav class="site-nav">
@@ -20,23 +20,23 @@
         <ul class="social-media-list">
           {% if site.twitter_username %}
           <li>
-            <a class="page-link" href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
+            <a class="page-link" title="Twitter" href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
           </li>
           {% endif %}
           {% if site.email %}
           <li>
-            <a class="page-link" href="mailto:{{ site.email }}"><i class="fa fa-envelope-o"></i></a>
+            <a class="page-link" title="e-mail" href="mailto:{{ site.email }}"><i class="fa fa-envelope-o"></i></a>
           </li>
           {% endif %}
           {% if site.github_username %}
           <li>
-            <a class="page-link" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener"><i class="fa fa-github"></i></a>
+            <a class="page-link" title="Github" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener"><i class="fa fa-github"></i></a>
           </li>
           {% endif %}
           {% for my_page in site.pages %}
             {% if my_page.title %}
             <li>
-              <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+              <a class="page-link" title="About us" href="{{ my_page.url | prepend: site.baseurl }}"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
             </li>
             {% endif %}
           {% endfor %}
