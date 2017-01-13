@@ -80,7 +80,7 @@ dat[['all_grades', 'd_or_f']].head()
 </p>
 
 
-Then I could count schools broken down by that binary variable as well as charter and AEA status. Even though it’s example in the official pandas crosstab documentation, I had never before realized I could crosstab more than two variables by passing lists:
+Then I could count schools broken down by that binary variable as well as charter and AEA status. Even though it’s example in the official pandas crosstab [documentation](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.crosstab.html), I had never before realized I could crosstab more than two variables by passing lists:
 
 
 ```python
