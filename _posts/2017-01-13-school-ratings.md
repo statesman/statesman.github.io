@@ -11,18 +11,18 @@ byline:
 
 How do school ratings differ between local charter and traditional public schools?
 
-Finding an answer involved learning new a pandas trick and writing a python geospatial query.
+Finding an answer involved learning new a [pandas](http://pandas.pydata.org/) trick and writing a python geospatial query.
 
 Reporters Melissa Taboada and Julie Chang investigated charter school trends after the Texas Education Agency released preliminary results of its new school rating system. We were also interested in comparing the [preliminary A-F grades](http://www.mystatesman.com/news/local-education/texas-schools-and-districts-got-their-letter-grades-from-state/06y5h5VGHqhfgcAozpXh7I/) to the [previous system](http://www.statesman.com/news/local/four-austin-middle-schools-stumble-texas-education-ratings/N53OLKMxv8v6xvAe2kNARM/).
 
-The previous system rated schools based on whether they met target scores in four categories. The proposed A-F system assigns schools scores in five categories and converts those numerical scores to letter grades. Although the systems are considerably different, we decided compare:
+The previous system rated schools based on whether they met target scores in four categories. The proposed A-F system assigns schools scores in five categories and converts those numerical scores to letter grades. Although the systems are considerably different, we decided to compare:
 
 - How many schools missed at least one target score under the old system?
 - How many received a D or F in any category of the new system?
 
 We would also examine differences between those counts when aggregated by charter and “alternative education” school status.
 
-I used pandas to assign and count schools by catecory. Both ratings systems published data as spreadsheets with a row for each school and a column for each category grade. I assigned binary values to represent if a school received a D or F or missed a target by concatenating the grade columns and testing the resulting string:
+I used pandas to assign and count schools by category. Both ratings systems published data as spreadsheets with a row for each school and a column for each category grade. I assigned binary values to represent if a school received a D or F or missed a target by concatenating the grade columns and testing the resulting string:
 
 ``` python
 # Concatenate column values
@@ -84,7 +84,7 @@ Then I could count schools broken down by that binary variable as well as charte
 
 
 ```python
-pd.crosstab(
+pandas.crosstab(
     dat.fail_grade,
     [dat.is_charter, dat.is_aea]
 )
@@ -127,7 +127,7 @@ pd.crosstab(
 </div>
 </p>
 
-We wanted to apply this method only to schools in the Austin area. Because charter schools can be members of school districts that are based in other Texas regions, we decided a geospatial query would be the most reliable way to identify schools in the Austin area. I used `fiona` to read shapefiles of Texas schools and education regions, `pyproj` to reproject schools points to the same coordinate system as the regions and shapely to test if schools are located inside the Austin education region:
+We wanted to apply this method only to schools in the Austin area. Because charter schools can be members of school districts that are based in other Texas regions, we decided a geospatial query would be the most reliable way to identify schools in the Austin area. I used [`fiona`](http://toblerity.org/fiona/) to read shapefiles of Texas schools and education regions, [`pyproj`](https://jswhit.github.io/pyproj/) to reproject schools points to the same coordinate system as the regions and [`shapely`](http://toblerity.org/shapely/) to test if schools are located inside the Austin education region:
 
 ```python
 import fiona
