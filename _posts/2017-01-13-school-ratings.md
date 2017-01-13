@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "School ratings in pandas"
+title: "Aggregating and querying school ratings"
 date: 2017-01-13 10:00:00 -0500
 categories: data-analysis
 tags: notebooks
@@ -13,7 +13,7 @@ How do school ratings differ between local charter and traditional public school
 
 Finding an answer involved learning new a pandas trick and writing a python geospatial query.
 
-Reporters Melissa Taboada and Julie Chang investigated charter school trends after the Texas Education Agency released preliminary results of its new school rating system. We were also interested in comparing the preliminary A-F grades to the [previous system](http://www.statesman.com/news/local/four-austin-middle-schools-stumble-texas-education-ratings/N53OLKMxv8v6xvAe2kNARM/).
+Reporters Melissa Taboada and Julie Chang investigated charter school trends after the Texas Education Agency released preliminary results of its new school rating system. We were also interested in comparing the [preliminary A-F grades](http://www.mystatesman.com/news/local-education/texas-schools-and-districts-got-their-letter-grades-from-state/06y5h5VGHqhfgcAozpXh7I/) to the [previous system](http://www.statesman.com/news/local/four-austin-middle-schools-stumble-texas-education-ratings/N53OLKMxv8v6xvAe2kNARM/).
 
 The previous system rated schools based on whether they met target scores in four categories. The proposed A-F system assigns schools scores in five categories and converts those numerical scores to letter grades. Although the systems are considerably different, we decided compare:
 
