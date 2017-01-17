@@ -80,7 +80,7 @@ dat[['all_grades', 'd_or_f']].head()
 </p>
 
 
-Then I could count schools broken down by that binary variable as well as charter and AEA status. Even though it’s example in the official pandas crosstab [documentation](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.crosstab.html), I had never before realized I could crosstab more than two variables by passing lists:
+Then I could count schools broken down by that binary variable as well as charter and AEA status. Even though it’s an example in the official pandas crosstab [documentation](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.crosstab.html), I had never before realized I could crosstab more than two variables by passing lists:
 
 
 ```python
@@ -127,7 +127,7 @@ pandas.crosstab(
 </div>
 </p>
 
-We wanted to apply this method only to schools in the Austin area. Because charter schools can be members of school districts that are based in other Texas regions, we decided a geospatial query would be the most reliable way to identify schools in the Austin area. I used [`fiona`](http://toblerity.org/fiona/) to read shapefiles of Texas schools and education regions, [`pyproj`](https://jswhit.github.io/pyproj/) to reproject schools points to the same coordinate system as the regions and [`shapely`](http://toblerity.org/shapely/) to test if schools are located inside the Austin education region:
+We wanted to apply this method only to schools in the Austin area. Because charter schools can be members of school districts that are based in other Texas regions, we decided a geospatial query would be the most reliable way to identify schools in the Austin area. I used [fiona](http://toblerity.org/fiona/) to read shapefiles of Texas schools and education regions, [pyproj](https://jswhit.github.io/pyproj/) to reproject schools points to the same coordinate system as the regions and [shapely](http://toblerity.org/shapely/) to test if schools are located inside the Austin education region:
 
 ```python
 import fiona
