@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Launching the Statesman VoteTracker, a history lesson"
-date: 2017-04-13 10:00:00 -0500
+date: 2017-04-10 10:00:00 -0500
 categories: votetracker
 byline:
     - name: "Christian McDonald"
