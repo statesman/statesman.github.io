@@ -1,25 +1,27 @@
+- name: Dan Keemahill
+  title: News applications specialist
+  twitter: dankeemahill
+  github: dankeemahill
+  email: dkeemahill@statesman.com
+  description: ""
 - name: Christian McDonald
   title: Data editor
   twitter: crit
   github: critmcdonald
   email: cmcdonald@statesman.com
   description: ""
-- name: Dan Hill
-  title: News applications specialist
-  twitter: danhillreports
-  github: danhillreports
-  email: dhill@statesman.com
-  description: ""
+  alumni: true
 - name: Cody Winchester
   title: News applications specialist
   twitter: cody_winchester
   github: cjwinchester
   email: cwinchester@statesman.com
   description: ""
+  alumni: true
 - name: Adam Humphrey
   title: Intern
   twitter: humphrinator
   github: adamhumphrey
   email: adamthumph@gmail.com
-  description: ""  
+  description: ""
   alumni: true

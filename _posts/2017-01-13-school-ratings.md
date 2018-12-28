@@ -5,8 +5,8 @@ date: 2017-01-13 10:00:00 -0500
 categories: data-analysis
 tags: notebooks
 byline:
-    - name: "Dan Hill"
-      twitter: "danhillreports"
+    - name: "Dan Keemahill"
+      twitter: "dankeemahill"
 ---
 
 How do school ratings differ between local charter and traditional public schools?
